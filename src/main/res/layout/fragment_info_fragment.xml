@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.info_fragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:textSize="12dp"
+            android:text='Back'
+            android:layout_margin="10dp"
+            android:id="@+id/b_back_dariInfo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="200dp"
+                        android:id="@+id/iv_posterInfo"
+                        android:layout_margin="10dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_infotitle"
+                        android:text="Title :"
+                        android:layout_below="@id/iv_posterInfo"
+                        android:textSize="20dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_infotitletext"
+                        android:textSize="20dp"
+                        android:layout_below="@id/iv_posterInfo"
+                        android:layout_toRightOf="@id/tv_infotitle"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_chapterinfo"
+                        android:textSize="20dp"
+                        android:text="Chapter Length :"
+                        android:layout_below="@id/tv_infotitletext"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_chapterinfotext"
+                        android:textSize="20dp"
+                        android:text="22"
+                        android:layout_toRightOf="@id/tv_chapterinfo"
+                        android:layout_below="@id/tv_infotitletext"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_descinfo"
+                        android:text="Description :"
+                        android:textSize="20dp"
+                        android:layout_below="@id/tv_chapterinfo"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_descinfotext"
+                        android:textSize="20dp"
+                        android:layout_below="@id/tv_descinfo"
+                        android:layout_marginTop="5dp"/>
+                </RelativeLayout>
+            </ScrollView>
+
+            <ListView
+                android:id="@+id/list_chapter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/scrollView"
+                android:layout_weight="2"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

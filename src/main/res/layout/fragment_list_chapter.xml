@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:textSize="12dp"
+        android:text='Back'
+        android:layout_margin="10dp"
+        android:id="@+id/b_back_dariChapter"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_chapter"
+        android:text="Chapter : "
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_chapter"
+        android:id="@+id/tv_chapterText"
+        android:textSize="25dp"/>
+
+    <ListView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/lv_list_chapter"
+        android:layout_below="@id/b_back_dariChapter">
+    </ListView>
+
+
+</RelativeLayout>

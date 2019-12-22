@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".View.List_fragment">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@android:drawable/ic_menu_search"
+            android:id="@+id/iv_search"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:textColor="@color/black"
+            android:hint="Input title to search"
+            android:id="@+id/et_search"
+            android:layout_toRightOf="@id/iv_search"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+    </RelativeLayout>
+        <ListView
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/my_list"/>
+
+</FrameLayout>
